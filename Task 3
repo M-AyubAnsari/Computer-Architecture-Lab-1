@@ -1,0 +1,40 @@
+.text
+.globl main
+main:
+
+
+    addi x5, x0, 5 #a=5
+    addi x6, x0, 0 #b=0+0
+
+
+    addi x5, x0, 32 # a = b + 32;
+
+
+    add x18, x5, x6 #a+b
+
+
+    addi x19, x0, 5 #temp=5
+
+
+    sub x20, x18, x19 #(a+b)-5(temp)
+
+
+    sub x21, x5, x20 #(a - d)
+
+
+    sub x22, x6, x5 #(b - a)
+
+
+    add x23, x21, x22 #(a-d)+(b-a)
+
+
+    add x24, x23, x20 #e = (((a - d) + (b - a)) + d)
+
+
+    add x25, x20, x24 #d + e
+ 
+    add x24, x18, x25 # e = a + b + d + e
+
+
+end:
+    j end
