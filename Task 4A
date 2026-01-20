@@ -1,0 +1,27 @@
+# Store x10 as unsigned integer at address 0x100.
+
+sw x10, 0x100(x0) # Using sw to store a 4 byte unsigned integer from  
+                    x10 at memory address 0x100.
+
+# Store x11 as unsigned integer at address 0x1F0.
+
+sw x11, 0x1F0(x0) # Using sw to store a 4 byte unsigned integer from 
+                    x11 at memory address 0x1F0.
+
+# Load an unsigned short integer (two bytes) from address 0x100 in x12.
+
+lhu x12, 0x100(x0) # Using lhu to load a 2 byte short unsigned integer 
+                     from memory address 0x100 into register x12. 
+
+# Load a short integer from address 0x1F0 in register x13.
+
+lh x13, 0x1F0(x0) # Using lh to load a 2 byte short signed integer from 
+                    memory address 0x1F0 into register x13. 
+
+# Load a singed character from address 0x1F0 in register 0x14.
+
+lb x14, 0x1F0(x0) # Using lb to load a 1 byte character from memory 
+                    address 0x1F0 into register x14.
+
+
+
